@@ -1,5 +1,3 @@
-# Cheese Clicker 🧀  
-
 Cheese Clicker ist ein lustiges Clicker-Spiel, bei dem du so viel Käse wie möglich sammeln musst!  
 
 ## 🎮 Features  
