@@ -2,7 +2,7 @@ Cheese Clicker ist ein lustiges Clicker-Spiel, bei dem du so viel Käse wie mög
 
 ## 🎮 Features  
 - Klicke auf den Käse, um Punkte zu sammeln  
-- Kaufe Upgrades, um mehr Käse zu bekommen  
+- Kaufe Upgrades, um mehr Käse zu bekommen  🧀
 - Freischalte geheime Items  
 
 ## 🚀 Spielen  
