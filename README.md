@@ -7,4 +7,4 @@ Cheese Clicker ist ein lustiges Clicker-Spiel, bei dem du so viel Käse wie mög
 
 ## 🚀 Spielen  
 Spiele das Spiel hier:  
-👉 [Cheese Clicker auf GitHub Pages](https://megahamster0.github.io/Cheese-Clicker/)  
+👉 [Cheese Clicker auf GitHub Pages](https://github.com/Megahamster0/Cheese-Clicker.git)  
