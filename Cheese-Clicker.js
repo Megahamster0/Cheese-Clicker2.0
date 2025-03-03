@@ -25,6 +25,12 @@ let mechamouseLevel = document.querySelector('.mechamouse-level');
 let mechamouseIncrease = document.querySelector('.mechamouse-increase');
 let parsedMechamouseIncrease = parseFloat(mechamouseIncrease.innerHTML);
 
+let drillCost = document.querySelector('.drill-cost');
+let parsedDrillCost = parseFloat(drillCost.innerHTML);
+let drillLevel = document.querySelector('.drill-level');
+let drillIncrease = document.querySelector('.drill-increase');
+let parsedDrillIncrease = parseFloat(drillIncrease.innerHTML);
+
 let cpcText = document.getElementById("cpc-text");
 let cpsText = document.getElementById("cps-text");
 
@@ -113,6 +119,21 @@ function buyMashine() {
 
         parsedMashineCost*= 1.18;
         mashineCost.innerHTML = Math.round(parsedMashineCost);
+    }
+}
+
+function buyDrill() {
+    if (parsedCheese >= parsedDrillCost) {
+        cheese.innerHTML = Math.round(parsedCheese -= parsedDrillCost);
+
+        drillLevel.innerHTML ++;
+
+        parsedDrillIncrease = parseFloat((parsedDrillIncrease * 1.03).toFixed(2));
+        drillIncrease.innerHTML = parsedDrillIncrease;
+        cps += parsedDrillIncrease;
+
+        parsedDrillCost*= 1.18;
+        drillCost.innerHTML = Math.round(parsedDrillCost);
     }
 }
 
