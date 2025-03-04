@@ -8,11 +8,11 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    position: relative
+    position: relative;
     font-family: "Baloo 2", serif;  
 }
 
-main {
+.main {
     display: flex;
     gap: 200px;
 }
