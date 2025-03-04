@@ -12,7 +12,7 @@ body {
     font-family: "Baloo 2", serif;  
 }
 
-.main {
+main {
     display: flex;
     gap: 200px;
 }
