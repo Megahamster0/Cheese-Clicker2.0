@@ -10,7 +10,7 @@
     <section>
         <div class="main">
             <div class="left">
-                <p>Cheese <br /> <span class="cheese-amount yellow-text">0</span></p>
+                <p>Cheese <br /> <span class="cheese-amount yellow-text">500000000</span></p>
                 <div class="cheese-img-container">
                     <img src="Assets/Cheese-Moon.png" 
                     alt="cheese-moon-img" 
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="upgrade" onclick="buyMouse()">
+                <div class="upgrade" onclick="buyUpgrade('mouse')">
                     <div class="left-section">
                         <img src="Assets/Mouse.png" 
                              alt="upgrade-1-img" class="upgrade-img">
@@ -41,7 +41,7 @@
                 </div>
 
 
-                <div class="upgrade" onclick="buyMiner()">
+                <div class="upgrade" onclick="buyUpgrade('miner')">
                     <div class="left-section">
                         <img src="Assets/Miner.png"
                              alt="upgrade-1-img" 
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 
-                <div class="upgrade" onclick="buyMechamouse()">
+                <div class="upgrade" onclick="buyUpgrade('mechamouse')">
                     <div class="left-section">
                         <img src="Assets/Mecha-Mouse.png"
                              alt="upgrade-1-img" 
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 
-                <div class="upgrade" onclick="buyMashine()">
+                <div class="upgrade" onclick="buyUpgrade('mashine')">
                     <div class="left-section">
                         <img src="Assets/Mashine.png"
                              alt="upgrade-1-img" 
@@ -103,7 +103,7 @@
                     </div>
                 </div>
 
-                <div class="upgrade" onclick="buyDrill()">
+                <div class="upgrade" onclick="buyUpgrade('drill')">
                     <div class="left-section">
                         <img src="Assets/Drill.png"
                              alt="upgrade-1-img" 
@@ -133,6 +133,16 @@
                 <p>CPS: <span id="cps-text" class="yellow-text">0</span></p>
             </div>
         </div>
+
+        <div class="util-buttons">
+            <button class="util-button" onclick="save()">
+                Save
+            </button>
+            <button class="util-button" onclick="load()">
+                Load
+            </button>
+        </div>
+        
     </section>
 
     <script src="Cheese-Clicker.js"></script>
