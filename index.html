@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheese-Clicker 2.0</title>
+
+  <!-- Icons -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <!-- Icons down -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'><!-- load -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'><!-- save -->
+
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Eigenes Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Obere Leiste -->
+  <div class="top">
+    <!-- Cheese CLicker und z. B. Buttons: Speichern, Einstellungen -->
+    <h1 class="title">Cheese-Clicker 2.0</h1>
+    <div class="center-buttons">
+    <button id="settings-btn"><i class="fi fi-rs-settings"></i>Settings</button>
+    <button id="section-titel1"><i class="fi fi-rr-user"></i>Profile</button>
+    <button id="section-titel1"><i class="fi fi-sr-stats"></i>Stats</button>
+    <button id="section-titel1"><i class="fi fi-rs-trophy"></i>Achievements</button>
+    <button id="section-titel1"><i class="fi fi-sr-leaderboard-trophy"></i>Leaderboard</button>
+    <button id="section-titel1"><i class="fi fi-rr-magic-wand"></i>Skills</button>
+    <button id="section-titel1"><i class="fi fi-rr-warehouse-alt"></i>Storage</button>
+    <button id="prestige-button"><i class="fi fi-rr-galaxy-star"></i>Prestige</button>
+    <button id="info-button"><i class="fi fi-rr-info"></i>Info</button>
+    </div>
+  </div>
+
+  <!-- Hauptbereich -->
+  <main class="main">
+    <!-- Linker Bereich -->
+    <section class="left">
+      <button class="buff">buff</button>
+      <p id="cheese-counter"><span class="cheese-cost">10000000</span> cheese</p>
+      <p>storage-balken</p>
+      <div class="mini-stats">
+        <p><i class="fi fi-tr-mouse-pointer-click"> </i><span class="cpc">1</span> per click</p>
+        <p><i class="fi fi-rr-pending"> </i><span class="cps">0</span> per second</p>
+      </div>
+      <div class="cheesemoon-img-container">
+        <img 
+        src="Assets/Pictures/Cheesemoon-Light.png" alt="Cheesemoon"class="cheesemoon" onclick="incrementCheese(event)" draggable="false"/>
+      </div>
+      
+    </section>
+
+        <!-- mittlige Bereich -->
+    <section class="center">
+      <div class="center-main">
+        Hamptervillage
+      </div>
+
+      <div class="settings" style="display:none;">
+        <button class="showMain-btn" onclick="showMain()"><i class="fi fi-rr-cross-circle"></i></button>
+        <h2 class="section-title">SETTINGS</h2>
+        <button class="util-btn" onclick="load()"><i class="fi fi-rr-progress-download"></i>Load</button>
+        <button class="util-btn" onclick="save()"><i class="fi fi-rr-disk"></i>Save</button>
+      </div>
+    </section>
+
+
+    <section class="right">
+      <div class="tab-switch">
+        <button id="tab-buildings" class="tab active"><i class="fi fi-rs-bolt"></i>Buildings</button>
+        <button id="tab-upgrades" class="tab"><i class="fi fi-br-chevron-double-up"></i>Upgrades</button>
+      </div>
+      <div id="buildings-list" class="tab-content">
+
+
+        <!-- Mouse Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Mouse.png" alt="Mouse" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Mouse</p>
+              <p>+<span class="mouse-increase">0.5 </span>cheese/click</p>
+              <p>Level <span class="mouse-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Mouse')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="mouse-cost">20</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Miner Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Miner.png" alt="Miner" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Miner</p>
+              <p>+<span class="miner-increase">0.5 </span>cheese/sec</p>
+              <p>Level <span class="miner-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Miner')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="miner-cost">80</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Minecart Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Minecart.png" alt="Minecart" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Minecart</p>
+              <p>+<span class="minecart-increase">8 </span>cheese/sec</p>
+              <p>Level <span class="minecart-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Minecart')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="minecart-cost">1000</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Excavator Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Excavator.png" alt="Excavator" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Excavator</p>
+              <p>+<span class="excavator-increase">40 </span>cheese/sec</p>
+              <p>Level <span class="excavator-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Excavator')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="excavator-cost">12000</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drill Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Drill.png" alt="Drill" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Drill</p>
+              <p>+<span class="drill-increase">280 </span>cheese/sec</p>
+              <p>Level <span class="drill-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Drill')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="drill-cost">150000</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- Upgrades-Tab -->
+      <div id="upgrades-list" class="tab-content" style="display:none;">
+        <p>Hier erscheinen die Upgrades.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="global-building-stats" style="display:none; position:fixed; z-index:9999;"></div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
