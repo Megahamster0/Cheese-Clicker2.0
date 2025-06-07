@@ -130,7 +130,7 @@ const buildings = [
 ]
 
 function incrementCheese(event) {
-  cheese.innerHTML = Math.round(parsedCheese += cpc);
+  cheese.innerHTML = nf(parsedCheese += cpc);
 
   //fade-up animation cheesemoon
   const x = event.offsetX;
@@ -156,7 +156,7 @@ function buyBuilding(building) {
   })
 
   if (parsedCheese >= mb.parsedCost) {
-    cheese.innerHTML = Math.round(parsedCheese -= mb.parsedCost);
+    cheese.innerHTML = nf(parsedCheese -= mb.parsedCost);
 
     mb.level.innerHTML ++;
 
@@ -226,7 +226,7 @@ function load () {
 
 setInterval(() => {
   parsedCheese += cps / 10
-  cheese.innerHTML = Math.round(parsedCheese);
+  cheese.innerHTML = nf(parsedCheese);
   cpcText.innerHTML = Math.round(cpc);
   cpsText.innerHTML = Math.round(cps);
 },100);
