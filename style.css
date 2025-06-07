@@ -335,7 +335,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  overflow: visible;
+  overflow-y: auto; /* Scrollbar für den Inhalt */
+  overflow-x: hidden; /* Keine horizontale Scrollbar */
   z-index: 1;
 }
 
@@ -388,6 +389,7 @@ p {
 #buildings-list {
   max-height: 60vh;      /* oder eine andere feste/maximale Höhe */
   overflow-x: visible;
+  overflow-y: auto;      /* Vertikales Scrollen erlaubt */
   padding-right: 0px;    /* Platz für Scrollbar */
 }
 

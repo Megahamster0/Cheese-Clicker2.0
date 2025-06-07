@@ -116,6 +116,17 @@ const buildings = [
     cheesemultiplier: 1.045,
     costMultiplier: 1.160,
   },
+
+  {
+    name: 'Harvester',
+    cost: document.querySelector('.harvester-cost'),
+    parsedCost: parseFloat(document.querySelector('.harvester-cost').innerHTML),
+    increase: document.querySelector('.harvester-increase'),
+    parsedIncrease: parseFloat(document.querySelector('.harvester-increase').innerHTML),
+    level: document.querySelector('.harvester-level'),
+    cheesemultiplier: 1.050,
+    costMultiplier: 1.155,
+  },
 ]
 
 function incrementCheese(event) {

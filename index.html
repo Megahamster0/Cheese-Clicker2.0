@@ -9,26 +9,10 @@
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-
-  <!-- Icons down -->
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'><!-- load -->
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'><!-- save -->
 
 
 
@@ -51,11 +35,11 @@
     <div class="center-buttons">
     <button id="settings-btn"><i class="fi fi-rs-settings"></i>Settings</button>
     <button id="section-titel1"><i class="fi fi-rr-user"></i>Profile</button>
-    <button id="section-titel1"><i class="fi fi-sr-stats"></i>Stats</button>
-    <button id="section-titel1"><i class="fi fi-rs-trophy"></i>Achievements</button>
-    <button id="section-titel1"><i class="fi fi-sr-leaderboard-trophy"></i>Leaderboard</button>
-    <button id="section-titel1"><i class="fi fi-rr-magic-wand"></i>Skills</button>
-    <button id="section-titel1"><i class="fi fi-rr-warehouse-alt"></i>Storage</button>
+    <button id="section-titel2"><i class="fi fi-sr-stats"></i>Stats</button>
+    <button id="section-titel3"><i class="fi fi-rs-trophy"></i>Achievements</button>
+    <button id="section-titel4"><i class="fi fi-sr-leaderboard-trophy"></i>Leaderboard</button>
+    <button id="section-titel5"><i class="fi fi-rr-magic-wand"></i>Skills</button>
+    <button id="section-titel6"><i class="fi fi-rr-warehouse-alt"></i>Storage</button>
     <button id="prestige-button"><i class="fi fi-rr-galaxy-star"></i>Prestige</button>
     <button id="info-button"><i class="fi fi-rr-info"></i>Info</button>
     </div>
@@ -69,7 +53,7 @@
       <p id="cheese-counter"><span class="cheese-cost">0</span> cheese</p>
       <p>storage-balken</p>
       <div class="mini-stats">
-        <p><i class="fi fi-tr-mouse-pointer-click"> </i><span class="cpc">1</span> per click</p>
+        <p><i class="fi fi-tr-mouse-pointer-click"> </i><span class="cpc">0</span> per click</p>
         <p><i class="fi fi-rr-pending"> </i><span class="cps">0</span> per second</p>
       </div>
       <div class="cheesemoon-img-container">
@@ -165,8 +149,8 @@
             <img src="Assets/Pictures/Excavator.png" alt="Excavator" class="building-img" draggable="false">
             <div class="building-info">
               <p class="building-name">Excavator</p>
-              <p>+<span class="excavator-increase">40 </span>cheese/sec</p>
-              <p>Level <span class="excavator-level">0</span></p>
+              <p>+<span class="excavator-increase">25 </span>cheese/sec</p>
+              <p>Level <span class="excavator-level">40</span></p>
             </div>
             <div class="building-actions">
               <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
@@ -197,6 +181,24 @@
           </div>
         </div>
 
+        <!-- Harvester Building -->
+        <div class="building-row">
+          <div class="building-card">
+            <img src="Assets/Pictures/Harvester.png" alt="Harvester" class="building-img" draggable="false">
+            <div class="building-info">
+              <p class="building-name">Harvester</p>
+              <p>+<span class="harvester-increase">1250 </span>cheese/sec</p>
+              <p>Level <span class="harvester-level">0</span></p>
+            </div>
+            <div class="building-actions">
+              <button class="sell-btn"><i class="fi fi-rr-coins"></i> Sell</button>
+              <button class="buy-btn" onclick="buyBuilding('Harvester')">
+                <i class="fi fi-rc-cheese"></i>
+                <span class="harvester-cost">150000</span>
+              </button>
+            </div>
+          </div>
+        </div>
         
       </div>
 
