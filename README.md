@@ -1,13 +1,15 @@
-Willkommen bei **Cheese Clicker**, dem lustigen Clicker-Spiel, in dem du so viel Käse wie möglich sammeln musst!
+Cheese-Clicker2.0
 
-## 🎮 Features
-✔ Klicke auf den Käsemond, um Käse zu sammeln  
-✔ Kaufe Upgrades, um deine Produktion zu steigern 🏭  
-✔ Entdecke geheime Items und mächtige Boni 🔥  
-✔ Baue dein Käse-Imperium aus und werde der ultimative Käse-Tycoon!  
+🎮 Features
 
-## 🚀 Jetzt spielen!
-Teste dein Können und sammle unendlich viel Käse:  
+🔥 Smash the Cheese Moon to collect massive amounts of cheese!
+⚙️ Unlock powerful upgrades to boost your cheese production exponentially!
+💎 Discover hidden items and unlock epic bonuses that supercharge your gameplay!
+🏰 Build your unstoppable cheese empire and climb the leaderboard to become the ultimate Cheese Tycoon!
+
+🚀 Ready to become the cheese master?
+Test your clicking skills and rack up endless cheese:
+Play CheeseClicker 2.0 on GitHub Pages 
 👉 **[Cheese Clicker auf GitHub Pages](https://megahamster0.github.io/Cheese-Clicker2.0/)**  
 
-Viel Spaß beim Klicken! 🐭🧀
+Get clicking and let the cheese flow! 🐭🧀
