@@ -8,6 +8,6 @@ Willkommen bei **Cheese Clicker**, dem lustigen Clicker-Spiel, in dem du so viel
 
 ## 🚀 Jetzt spielen!
 Teste dein Können und sammle unendlich viel Käse:  
-👉 **[Cheese Clicker auf GitHub Pages](https://megahamster0.github.io/Cheese-Clicker/)**  
+👉 **[Cheese Clicker auf GitHub Pages](https://megahamster0.github.io/Cheese-Clicker2.0/)**  
 
 Viel Spaß beim Klicken! 🐭🧀
